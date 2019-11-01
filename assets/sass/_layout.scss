@@ -1,0 +1,472 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+p{
+    text-align: justify;
+    color: #76A4B3;
+}
+
+li{
+    list-style: none !important;
+}
+
+#header{
+    padding-bottom: 20px;
+    .border{
+        &.one{
+            border-top: 10px solid #07A3B0;
+            width: 100%;
+        }
+        &.two{
+            border-top: 10px solid #09CCC6;
+            width: 100%;
+        }
+        &.three{
+            border-top: 10px solid #26CFA4;
+            width: 100%;
+        }                
+    }
+    .nopad{
+        padding: 0;
+        margin-bottom: 10px;
+    }    
+    .navbar-collapse{
+        padding: 0;
+        margin-top: 25px;
+        li{
+            margin-left: 35px;
+        }
+        a{
+            text-transform: uppercase;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;  
+            padding: 5px 10px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        a:hover, a:focus, a:active, li.active a{
+            background-color: $brand-primary;
+            color: #fff;
+        }
+    }    
+}
+
+#footer{
+    padding-bottom: 20px;
+    .custom-logo{
+        width: 60%;
+        height: 60%;
+    }
+    .navbar-collapse{
+        padding: 0;
+        margin-top: 20px;
+        li{
+            margin-left: 40px;
+        }
+        a{
+            text-transform: uppercase;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;  
+            padding: 5px 10px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        a:hover, a:focus, a:active, li.active a{
+            background-color: $brand-primary;
+            color: #fff;
+        }
+    } 
+    p{
+        color: $brand-primary;
+        margin: 0;
+        margin-top: 30px;
+        text-align: center !important;
+    }
+    .nopad{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .border{
+        &.one{
+            border-top: 5px solid #06A3AF;
+            width: 100%;
+        }
+        &.two{
+            border-top: 5px solid #09CCC6;
+            width: 100%;
+        }
+        &.three{
+            border-top: 5px solid #26CFA4;
+            width: 100%;
+        }
+        &.four{
+            border-top: 5px solid #92C84C;
+            width: 100%;
+        }
+    }
+}
+
+#header-section{
+    background-color: #09CCC6;
+    .title{
+        background-color: $brand-primary;
+        padding: 15px;
+        h2{
+            margin: 0;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#home{
+    .infos{
+      padding: 30px 0;
+      .info{
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ccc;
+        .title{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(7,163,176,0.7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 9;
+          h3{
+            margin: 0;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+    .about{
+        background: url('/wp-content/themes/otos/assets/images/about.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;  
+        padding: 20px 0;
+        h2, p{
+            color: #fff;
+        }
+        .text{
+            padding-top: 45px;
+            h2{
+                margin: 0;
+                margin-bottom: 40px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .galery{
+        padding: 20px 0;
+        h2{
+            margin: 0;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .image{
+            position: relative;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba( 7, 163, 176, 0.6 );
+            color: #fff;
+            padding-top: 30%;
+            opacity: 0;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s;             
+        }
+        .image:hover{
+            .overlay{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#text{
+    padding: 20px 0;
+    .border{
+        &.one{
+            border-top: 60px solid #07A3B0;
+            width: 100%;
+        }
+        &.two{
+            border-top: 60px solid #09CCC6;
+        }                  
+    } 
+    .nopad{
+        padding: 0;
+        margin-top: 165px;
+    }
+}
+
+#galery{
+    padding: 20px 0;
+    h2{
+        margin: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: $brand-primary;
+    }
+    .image{
+        position: relative;
+        margin: 15px 0;
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba( 7, 163, 176, 0.6 );
+        color: #fff;
+        padding-top: 30%;
+        opacity: 0;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;             
+    }
+    .image:hover{
+        .overlay{
+            opacity: 1;
+        }
+    }    
+}
+
+#exams{
+    padding: 20px 0;
+    h4, p{
+        margin: 0;
+    }
+    i{
+        margin-top: 3px;
+    }
+    .panel-collapse{
+        p{
+            padding: 10px 15px;
+        }
+    }
+}
+
+#body{
+    padding: 20px 0;
+    h3{
+        color: $brand-primary;
+        margin: 20px 0 5px;
+    }
+    h4{
+        color: $brand-primary;
+        margin: 5px 0 20px;        
+    }
+    p{
+        margin: 0;
+        color: #76A4B3;
+    }
+    .image{
+        width: 160px;
+        height: 160px;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);      
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 20px auto;
+        img{
+            -ms-transform: rotate(-45deg); /* IE 9 */
+            -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+            transform: rotate(-45deg);  
+            width: 235px;
+            height: 235px;
+            top: -35px;
+            position: relative;
+            left: -35px;    
+            max-width: inherit;
+        }
+    }
+    .nopad{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .border{
+        &.one{
+            border-top: 5px solid #06A3AF;
+            width: 100%;
+        }
+        &.two{
+            border-top: 5px solid #09CCC6;
+            width: 100%;
+        }
+        &.three{
+            border-top: 5px solid #26CFA4;
+            width: 100%;
+        }
+        &.four{
+            border-top: 5px solid #92C84C;
+            width: 100%;
+        }
+    }    
+}
+
+#covenants{
+    padding: 20px 0;
+    .covenant{
+        margin-bottom: 15px;
+    }
+}
+
+#blog{
+    padding: 20px 0;
+    .notice{
+        margin-bottom: 20px;
+        h4{
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        a{
+            margin: 10px 0;
+            color: $brand-primary;
+            &.btn{
+                color: #fff;
+            }
+        }
+    }
+}
+
+#contact-page{
+    padding: 20px 0;
+    .phones{  
+        padding-bottom: 20px;
+        p{
+            margin: 0 0 5px 45px;
+        }
+        h4{
+            margin: 0 0 10px 45px;
+            text-transform: uppercase;
+            color: $brand-primary;
+            font-family: 'Hammersmith One', sans-serif;
+        }
+        .icon{
+            position: absolute;
+            color: $brand-primary;
+        }          
+    }
+    .text{
+        padding-bottom: 20px;
+        p{
+            margin: 0;
+        }
+        h3{
+            margin: 0;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: $brand-primary;
+            font-family: 'Hammersmith One', sans-serif;      
+        }
+    }
+    .social{
+        margin-top: 50px;
+        a{
+            color: $brand-primary;
+            margin-right: 10px;
+        }
+    }    
+    .captcha{
+        background: url("http://gdzsistemas.com.br/sendform/images/captcha.jpg");
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid $brand-primary;
+        background-size: 120%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 1.5em;
+        cursor: default;
+        color: $brand-primary;
+        padding: 0;
+    }
+    
+    .input-group-addon{
+        color: #FFF !important;
+    }
+    
+    .modal{
+        z-index: 999999999;
+    }    
+}
+
+#sheduling{
+    padding: 20px 0;
+    .text{
+        padding: 5px 0 30px;
+    }
+    p{
+        color: $brand-primary;
+        text-transform: uppercase;
+        text-align: center !important;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    .captcha{
+        background: url("http://gdzsistemas.com.br/sendform/images/captcha.jpg");
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid $brand-primary;
+        background-size: 120%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 1.5em;
+        cursor: default;
+        color: $brand-primary;
+        padding: 0;
+    }
+    
+    .input-group-addon{
+        color: #FFF !important;
+    }
+    
+    .modal{
+        z-index: 999999999;
+    }    
+}
+
+#map{
+    width: 100%;
+    height: 400px;
+}
+
+#cboxOverlay{
+    background-color: rgba( 7, 163, 176, 0.8 );
+}
